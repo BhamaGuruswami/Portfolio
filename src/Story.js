@@ -16,12 +16,12 @@ function Story() {
 
 
     <div className="section__img">
-        {/* <img src={man2} alt="" /> */}
+        <img src={profile} alt=""  height={"100"} width={'150px'}/>
     </div>
 
 
     <div className="section__content">
-        <h1>Who is Bhama</h1>
+        <h1>Who is Bhama ?</h1>
         <p>Currently I am doing Web development trainee at becode</p>
         <p>Junior fronted Developert</p>
         <p>Passionate about creating interactive applications</p>

@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <Container id='Contact'>
     <Row>
-        <h3>For More Information</h3>
+        {/* <h3>For More Information</h3> */}
         <h1>Contact Me</h1>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="">
