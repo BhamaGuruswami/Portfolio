@@ -1,8 +1,8 @@
 import './App.css';
-import Home from './Home';
-import Work from './Work';
-import Story from './Story';
-import Contact from './Contact';
+import Home from './component/Home';
+import Work from './component/Work';
+import Story from './component/Story';
+import Contact from './component/Contact';
 
 
 function App() {
