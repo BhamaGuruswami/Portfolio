@@ -1,50 +1,50 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Nav,Navbar,Row,Col} from 'react-bootstrap/';
 import { FaCircle} from 'react-icons/fa';
-import Image from './img/myphoto.jpg'
-import  './Home.css'
+import Image from '../img/myphoto.jpg'
+import  '../Home.css'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Project1 from './img/getflix.png';
-import Project2 from './img/cookiclicker.png';
-import Project3 from './img/potofilio.png';
-import {Link} from "react-router-dom"
+import Project1 from '../img/getflix.png';
+import Project2 from '../img/cookiclicker.png';
+import Project3 from '../img/potofilio.png';
 
-function Work() {
-  const [isMobile,setIsMobile]= useState(false)
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+export default function AutoGrid() {
   return (
     <Box sx={{ flexGrow: 1, textAlign:"center"}}>
       <Grid container>
         <Grid item  xs={12} md={6}>
         <Row className='mx-auto'>
         <Col className='lg-6 md-6' >
-        <nav className='navbar'>
-        <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
-              <ul className={isMobile? 'nav-links-mobile':'nav-links'}>
-                <Link to='/' className='home'>
-                  <li>Home</li>
-                </Link>
-                <Link to='/Work' className='work'>
-                  <li>Work</li> 
-                </Link>
-                <Link to='/Story' className='story'>
-                  <li>Story</li>
-                </Link>
-                <Link to='/Contact' className='contact'>
-                  <li>Contact</li>
-                </Link>
-
-              </ul>
-              </nav>
+        <Navbar expand="lg my-3">
+        <Navbar.Brand href="#home bg-danger"> <strong>bh</strong>  <small><FaCircle /></small>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-5">
+            <Nav.Link to="./Work.js">Work</Nav.Link>
+            <Nav.Link to="#Story">Story</Nav.Link>
+            <Nav.Link to="#Contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+       </Navbar>
        <Card sx={{ maxWidth: 345,marginTop:"15px",elevation:"2" }}>
       <CardMedia
         component="img"
@@ -118,15 +118,5 @@ function Work() {
         </Grid>
       </Grid>
     </Box>
-
-//     <Container>
-//     <Row className=' box-service m-0 mx-auto gy-4 lg={3} md-{4} sm={12} xs={12} justify-content-center'>
-//     {/* first card */}
-//     </Row>
-//     </Container>
-
-);
-  }
-  
-
-export default Work;
+  );
+}

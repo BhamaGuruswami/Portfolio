@@ -1,7 +1,10 @@
-import { Row, InputGroup, Form, Col, Button, Container } from 'react-bootstrap/';
+import { Row, InputGroup, Form, Col,Container } from 'react-bootstrap/';
 import Image from './img/myphoto.jpg'
 import React, { useState } from 'react';
 import  './Home.css'
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import {Link} from "react-router-dom"
 
 const Contact = () => {
   const [validated, setValidated] = useState(false);
@@ -15,9 +18,34 @@ const Contact = () => {
 
     setValidated(true);
   };
+  const [isMobile,setIsMobile]= useState(false)
 
   return (
-    <Container id='Contact'>
+    <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+    <Grid container>
+      <Grid item xs={12} md={6} lg={6}sx={{border:"px solid red",padding:"35px" }} >
+      <nav className='navbar'>
+      <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
+              <ul className={isMobile? 'nav-links-mobile':'nav-links'}>
+                <Link to='/' className='home'>
+                  <li>Home</li>
+                </Link>
+                <Link to='/Work' className='work'>
+                  <li>Work</li> 
+                </Link>
+                <Link to='/Story' className='story'>
+                  <li>Story</li>
+                </Link>
+                <Link to='/Contact' className='contact'>
+                  <li>Contact</li>
+                </Link>
+
+              </ul>
+              <button className=' '>
+                {isMobile ? <i className='fas fa-times'></i>: <i className='fas fa-bars'></i>}
+              </button>
+            </nav>
+
     <Row>
         {/* <h3>For More Information</h3> */}
         <h1>Contact Me</h1>
@@ -88,7 +116,7 @@ const Contact = () => {
             <Col>
               <Form.Group as={Col} md="12"  sm="12" controlId="validationCustom04">
                 <Form.Label>Message</Form.Label>
-                <Form.Control type="text" placeholder="Message" required />
+                <Form.Control as="textarea" rows={4} />
                 <Form.Control.Feedback type="invalid">
                   Write your message.
                 </Form.Control.Feedback>
@@ -99,34 +127,18 @@ const Contact = () => {
         <button className='submit-btn my-3' type="submit">Send</button>
       </Form>
 
-        {/* <form>
-  <div class="form-outline mb-3">
-  <label class="form-label" for="form4Example1">Name</label>
-    <input type="text" id="form4Example1" class="form-control" />
-  </div>
-
-<div class="form-outline mb-3">
-    <input type="email" id="form4Example2" class="form-control" />
-    <label class="form-label" for="form4Example2">Email address</label>
-  </div>
-
-  <div class="form-outline mb-3">
-    <textarea class="form-control" id="form4Example3" rows="2"></textarea>
-    <label class="form-label" for="form4Example3">Subject</label>
-  </div>
-  <div class="form-outline mb-3">
-    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-    <label class="form-label" for="form4Example3">Message</label>
-  </div>
-
-  <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-</form>         */}
-        {/* <Col>
-        {/* <img src={Image} className="profile" alt="profile" /> */}
-        {/* </Col> */} 
-
     </Row>
-    </Container>
+    
+    </Grid>
+    <Grid item xs={6}  lg={6}>
+        <Col className='hide-on-mobile lg-6'>
+          <img src={Image} className="profile" alt="profile" />
+
+        </Col>
+      </Grid>
+
+    </Grid>
+  </Box>
   )
 }
 

@@ -1,23 +1,69 @@
-import React from 'react'
-import Image from './img/myphoto.jpg'
-import { Container, Row, Col } from 'react-bootstrap/';
+import React, { useState } from 'react';
 import  './Home.css'
-import profile from './img/myphoto.jpg'
 import "./Story.css";
-
+import {Nav,Container,Navbar,Row,Col} from 'react-bootstrap/';
+import Image from './img/myphoto.jpg'
+import  './Home.css'
+import { FaCircle,FaGithub,FaInstagram,FaLinkedinIn} from 'react-icons/fa';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import {Link} from "react-router-dom"
 
 function Story() {
+  const [isMobile,setIsMobile]= useState(false)
+
   return (
-    <Container id='Story'>
-              <div className='section'>
+    <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+    <Grid container>
+      <Grid item xs={12} md={6} lg={6}>
+        <Row className='mx-auto'>
+          <Col>
+          <nav className='navbar'>
+          <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
+              <ul className={isMobile? 'nav-links-mobile':'nav-links'}>
+                <Link to='/' className='home'>
+                  <li>Home</li>
+                </Link>
+                <Link to='/Work' className='work'>
+                  <li>Work</li> 
+                </Link>
+                <Link to='/Story' className='story'>
+                  <li>Story</li>
+                </Link>
+                <Link to='/Contact' className='contact'>
+                  <li>Contact</li>
+                </Link>
+
+              </ul>
+              <button className=' '>
+                {isMobile ? <i className='fas fa-times'></i>: <i className='fas fa-bars'></i>}
+              </button>
+            </nav>
+
+        <Navbar expand="lg my-3">
+        <Navbar.Brand href="#home bg-danger"> <strong>bh</strong>  <small><FaCircle /></small>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-5">
+            <Nav.Link to="./Work.js">Work</Nav.Link>
+            <Nav.Link to="#Story">Story</Nav.Link>
+            <Nav.Link to="#Contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+       </Navbar>
+
+            <div className='section'>
 
 
 <div className="section__container">
 
 
-    <div className="section__img">
+    {/* <div className="section__img">
         <img src={profile} alt=""  height={"100"} width={'150px'}/>
-    </div>
+    </div> */}
 
 
     <div className="section__content">
@@ -35,20 +81,17 @@ function Story() {
 
 
 </div>
+          </Col>
+        </Row>
+      </Grid>
+      <Grid item xs={6}  lg={6}>
+        <Col className='hide-on-mobile lg-6'>
+          <img src={Image} className="profile" alt="profile" />
 
-    {/* <Row>
-      <Col>
-        <h1>About Me</h1>
-        I am bhama guruswami junior fronted developer .Currently I am doing Web development trainee at becode
-        
-        
-      </Col>
-      <Col>
-      <img src={Image} className="profile" alt="profile" />
-      </Col>
-
-    </Row> */}
-  </Container>
+        </Col>
+      </Grid>
+    </Grid>
+  </Box>
 
   );
 }
