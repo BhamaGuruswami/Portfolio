@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import  './Home.css'
 import "./Story.css";
 import {Nav,Container,Navbar,Row,Col} from 'react-bootstrap/';
-import Image from './img/myphoto.jpg'
+import Image from '../img/myphoto.jpg'
 import  './Home.css'
 import { FaCircle,FaGithub,FaInstagram,FaLinkedinIn} from 'react-icons/fa';
 import { styled } from '@mui/material/styles';

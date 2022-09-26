@@ -1,5 +1,5 @@
 import { Row, InputGroup, Form, Col,Container } from 'react-bootstrap/';
-import Image from './img/myphoto.jpg'
+import Image from '../img/myphoto.jpg'
 import React, { useState } from 'react';
 import  './Home.css'
 import Box from '@mui/material/Box';

@@ -1,6 +1,6 @@
 import {Row,Col} from 'react-bootstrap/';
 import React, { useState } from 'react'
-import Image from './img/myphoto.jpg'
+import Image from '../img/myphoto.jpg'
 import  './Home.css'
 import {FaGithub,FaInstagram,FaLinkedinIn,} from 'react-icons/fa';
 import Box from '@mui/material/Box';

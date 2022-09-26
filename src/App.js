@@ -1,8 +1,8 @@
 import './App.css';
-import Home from './Home';
-import Work from './Work';
-import Story from './Story';
-import Contact from './Contact';
+import Home from './components/Home';
+import Work from './components/Work';
+import Story from './components/Story';
+import Contact from './components/Contact';
 import { BrowserRouter as Router,Route, Routes} from "react-router-dom"
 // import { Route, Routes} from "react-router-dom"
 //import {Layout, Header, Navigation , Drawer, Content } from 'react-mdl'
@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Home/>
+      {/* <Home /> */}
       <Routes>
-      <Route exact path="/" component={Home}/>
-      <Route path='/work' component={Work}/>
-      <Route path='/story' component={Story}/>
-      <Route path='/contact' component={Contact}/> 
+      <Route path="/" element={<Home />}/>
+      <Route path='/work' element={<Work />}/>
+      <Route path='/story' element={<Story />}/>
+      <Route path='/contact' element={<Contact />}/> 
 
       </Routes>
       </Router>

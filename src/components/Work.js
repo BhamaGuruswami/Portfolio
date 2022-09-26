@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Nav,Navbar,Row,Col} from 'react-bootstrap/';
 import { FaCircle} from 'react-icons/fa';
-import Image from './img/myphoto.jpg'
+import Image from '../img/myphoto.jpg'
 import  './Home.css'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -13,9 +13,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Project1 from './img/getflix.png';
-import Project2 from './img/cookiclicker.png';
-import Project3 from './img/potofilio.png';
+import Project1 from '../img/getflix.png';
+import Project2 from '../img/cookiclicker.png';
+import Project3 from '../img/potofilio.png';
 import {Link} from "react-router-dom"
 
 function Work() {
