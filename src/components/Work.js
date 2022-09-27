@@ -4,6 +4,8 @@ import Grid from '@mui/material/Grid';
 import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
 import  './Home.css'
+import  './Project.css'
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -23,7 +25,7 @@ function Work() {
       <Grid container>
         <Grid item  xs={12} md={6}>
         <Row className='mx-auto'>
-        <Col className='lg-6 md-6' >
+        <Col >
         <nav className='navbar'>
         <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
               <ul className={isMobile? 'nav-links-mobile':'nav-links'}
@@ -60,7 +62,7 @@ function Work() {
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
         BesTube        </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" >
         <p>In this exercise, we created a Streaming site in html / css, javascript and php.
        We were inspired by Netflix, Amazon Prime Video, Youtube... The goal is to display a catalogue of movies and TV series.
 </p>

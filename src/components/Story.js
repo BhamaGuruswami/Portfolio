@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import  './Home.css'
 import "./Story.css";
+import "./About.css";
+
 import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
 import  './Home.css'
@@ -43,45 +45,20 @@ function Story() {
               </button>
             </nav>
 
-        {/* <Navbar expand="lg my-3">
-        <Navbar.Brand href="#home bg-danger"> <strong>bh</strong>  <small><FaCircle /></small>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-5">
-            <Nav.Link to="./Work.js">Work</Nav.Link>
-            <Nav.Link to="#Story">Story</Nav.Link>
-            <Nav.Link to="#Contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-       </Navbar> */}
-
             <div className='section'>
-
-
-<div className="section__container">
-
-
-    {/* <div className="section__img">
-        <img src={profile} alt=""  height={"100"} width={'150px'}/>
-    </div> */}
-
-
+       <div className="section__container">
     <div className="section__content">
         <h1>Who is Bhama ?</h1>
-        <p>Currently I am doing Web development trainee at becode</p>
-        <p>Junior fronted Developert</p>
+        <p>Web development trainee at becode</p>
+        <p>Junior fronted Developer</p>
         <p>Passionate about creating interactive applications</p>
         <p>Javascript Developer</p>
         <p>React js Developer</p>
     </div>
-
-
+</div>
 
 </div>
 
-
-</div>
           </Col>
         </Row>
       </Grid>
