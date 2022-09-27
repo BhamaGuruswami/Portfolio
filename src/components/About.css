@@ -43,7 +43,7 @@
 
         ;}
 
-        p:hover {
+        .section__content p:hover {
             transform: scale(110%);
             transition: 250ms;
             color: #FF4646;
@@ -62,7 +62,7 @@
         margin-bottom: 0rem;
     }
 
-    p {
+    .section__content p {
         font-size: 26px;
         margin-block: 25px;
         padding: 25px;
@@ -84,7 +84,7 @@
         color: black;
     }
 
-    p {
+    .section__content p {
         font-size: 10px;
         margin-block:5px;
         padding: 5px;
@@ -105,7 +105,7 @@
         margin-bottom: 0rem;
     }
 
-    p {
+    .section__content p {
         font-size: 18px;
         margin-block: 0px;
         padding: 0px;
