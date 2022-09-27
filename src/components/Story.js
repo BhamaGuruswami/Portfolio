@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import  './Home.css'
 import "./Story.css";
-import {Nav,Container,Navbar,Row,Col} from 'react-bootstrap/';
+import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
 import  './Home.css'
-import { FaCircle,FaGithub,FaInstagram,FaLinkedinIn} from 'react-icons/fa';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {Link} from "react-router-dom"
 
@@ -22,7 +19,9 @@ function Story() {
           <Col>
           <nav className='navbar'>
           <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
-              <ul className={isMobile? 'nav-links-mobile':'nav-links'}>
+              <ul className={isMobile? 'nav-links-mobile':'nav-links'}
+                 onClick={()=> setIsMobile(false)}
+                 >
                 <Link to='/' className='home'>
                   <li>Home</li>
                 </Link>
@@ -37,12 +36,14 @@ function Story() {
                 </Link>
 
               </ul>
-              <button className=' '>
-                {isMobile ? <i className='fas fa-times'></i>: <i className='fas fa-bars'></i>}
+              <button className='mobile-menu-icon'
+              onClick={()=>setIsMobile(!isMobile) }
+              >
+              {isMobile ? <i className="fa-sharp fa-solid fa-circle-xmark"></i>:<i className="fa-solid fa-bars"></i>}
               </button>
             </nav>
 
-        <Navbar expand="lg my-3">
+        {/* <Navbar expand="lg my-3">
         <Navbar.Brand href="#home bg-danger"> <strong>bh</strong>  <small><FaCircle /></small>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -53,7 +54,7 @@ function Story() {
             <Nav.Link to="#Contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-       </Navbar>
+       </Navbar> */}
 
             <div className='section'>
 

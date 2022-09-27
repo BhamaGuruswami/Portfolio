@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import {Link} from "react-router-dom"
 
 function Home() {
-  const [isMobile,setIsMobile]= useState(true)
+  const [isMobile,setIsMobile]= useState(false)
   return (
     <Box sx={{ flexGrow: 1, textAlign: "center" }}>
     <Grid container>
@@ -34,25 +34,30 @@ function Home() {
                 </Link>
 
               </ul>
-              <button className=' '>
-                {isMobile ? <i className='fas fa-times'></i>: <i className='fas fa-bars'></i>}
+              <button className='mobile-menu-icon'
+              onClick={()=>setIsMobile(!isMobile) }
+              >
+              {isMobile ? <i className="fa-sharp fa-solid fa-circle-xmark"></i>:<i className="fa-solid fa-bars"></i>}
               </button>
             </nav>
-
+<div className='intro'>
             <h1>Bhama </h1>
             <h2>Guruswami <span class="dot"></span></h2>
-            <p>Hi, I’m Bhama Guruswami Junior fronted developer at <b>BeCode</b>.</p>
+            <p>Hi, I’m Bhama Guruswami Junior fronted developer at <b>BeCode</b> and looking for an internship from November to February 2023</p>
+            </div>
             <Col className='social'>
               <button  href=' https://github.com/BhamaGuruswami?tab=repositories' className='hello'>Say Hello</button>
-              <button className='github'><FaGithub /></button>
+              <button className='github' ><FaGithub /></button>
               <button className='instagram'>< FaInstagram /></button>
               <button className='linkedin'>< FaLinkedinIn /></button>
+                            {/* <button className='github' ><a href="https://github.com/BhamaGuruswami"  target="_blank"><FaGithub /></a></button> */}
+
             </Col>
 
           </Col>
         </Row>
       </Grid>
-      <Grid item xs={6}  lg={6}>
+      <Grid item xs={6} md={6}  lg={6}>
         <Col className='hide-on-mobile lg-6'>
           <img src={Image} className="profile" alt="profile" />
 

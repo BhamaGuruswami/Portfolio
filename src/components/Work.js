@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import {Nav,Navbar,Row,Col} from 'react-bootstrap/';
-import { FaCircle} from 'react-icons/fa';
+import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
 import  './Home.css'
 import Card from '@mui/material/Card';
@@ -29,7 +26,9 @@ function Work() {
         <Col className='lg-6 md-6' >
         <nav className='navbar'>
         <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
-              <ul className={isMobile? 'nav-links-mobile':'nav-links'}>
+              <ul className={isMobile? 'nav-links-mobile':'nav-links'}
+                            onClick={()=>setIsMobile(false)}
+              >
                 <Link to='/' className='home'>
                   <li>Home</li>
                 </Link>
@@ -44,6 +43,12 @@ function Work() {
                 </Link>
 
               </ul>
+              <button className='mobile-menu-icon'
+              onClick={()=>setIsMobile(!isMobile) }
+              >
+              {isMobile ? <i className="fa-sharp fa-solid fa-circle-xmark"></i>:<i className="fa-solid fa-bars"></i>}
+              </button>
+
               </nav>
        <Card sx={{ maxWidth: 345,marginTop:"15px",elevation:"2" }}>
       <CardMedia
