@@ -5,7 +5,6 @@ import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
 import  './Home.css'
 import  './Project.css'
-
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -23,7 +22,7 @@ function Work() {
   return (
     <Box sx={{ flexGrow: 1, textAlign:"center"}}>
       <Grid container>
-        <Grid item  xs={12} md={6}>
+        <Grid item  xs={12} md={6}sm={12} lg={6}>
         <Row className='mx-auto'>
         <Col >
         <nav className='navbar'>
@@ -52,7 +51,8 @@ function Work() {
               </button>
 
               </nav>
-       <Card sx={{ maxWidth: 345,marginTop:"15px",elevation:"2" }}>
+<Grid>
+<Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -73,7 +73,7 @@ function Work() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card sx={{ maxWidth: 345,marginTop:"15px" }}>
+    <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -92,7 +92,7 @@ function Work() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card sx={{ maxWidth: 345,marginTop:"15px",border:"2px solid orange" }}>
+    <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -111,7 +111,7 @@ function Work() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-
+    </Grid>
 
 
         </Col>

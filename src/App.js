@@ -4,12 +4,7 @@ import Work from './components/Work';
 import Story from './components/Story';
 import Contact from './components/Contact';
 import { BrowserRouter as Router,Route, Routes} from "react-router-dom"
-// import { Route, Routes} from "react-router-dom"
-//import {Layout, Header, Navigation , Drawer, Content } from 'react-mdl'
 import  React from 'react';
-//import { Switch } from '@mui/material';
-//import { faRoad } from '@fortawesome/free-solid-svg-icons';
-// import Navbar from 'react-bootstrap/Navbar';
 
 
 function App() {

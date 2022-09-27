@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://BhamaGuruswami.github.io/Portfolio",
+  "name": "portfolio",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",

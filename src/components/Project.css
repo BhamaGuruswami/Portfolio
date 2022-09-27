@@ -2,10 +2,10 @@
     box-sizing: border-box;
 
 }
-.card-body{
-    box-sizing: border-box;
-    width: 450px;
-    height: 130px;
+.Card{
+    /* box-sizing: border-box; */
+    /* width: 450px;
+    height: 130px; */
     box-shadow: 0px 18px 50px rgba(255, 70, 70, 0.1);
   }
   .learn{
@@ -23,4 +23,3 @@
     position: absolute;
 
   }
-  

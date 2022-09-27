@@ -34,13 +34,13 @@ const Contact = () => {
                 <Link to='/' className='home'>
                   <li>Home</li>
                 </Link>
-                <Link to='./Work' className='work'>
+                <Link to='/Work' className='work'>
                   <li>Work</li> 
                 </Link>
-                <Link to='./Story' className='story'>
+                <Link to='/Story' className='story'>
                   <li>Story</li>
                 </Link>
-                <Link to='./Contact' className='contact'>
+                <Link to='/Contact' className='contact'>
                   <li>Contact</li>
                 </Link>
 
