@@ -40,9 +40,9 @@ function Home() {
               {isMobile ? <i className="fa-sharp fa-solid fa-circle-xmark"></i>:<i className="fa-solid fa-bars"></i>}
               </button>
             </nav>
-<div className='intro'>
-            <h1>Bhama </h1>
-            <h2>Guruswami <span class="dot"></span></h2>
+           <div className='intro'>
+            <h1 className='firstname'>bhama </h1>
+            <h3 className='secondname'>Guruswami <span class="dot"></span></h3>
             <p>Hi, I’m Bhama Guruswami Junior fronted developer at <b>BeCode</b> and looking for an internship from November to February 2023</p>
             </div>
             <Col className='social'>

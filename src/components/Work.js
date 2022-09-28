@@ -65,7 +65,7 @@ function Work() {
         <Typography variant="body2" >
         <p>In this exercise, we created a Streaming site in html / css, javascript and php.
        We were inspired by Netflix, Amazon Prime Video, Youtube... The goal is to display a catalogue of movies and TV series.
-</p>
+     </p>
         </Typography>
       </CardContent>
       <CardActions>
@@ -88,11 +88,10 @@ function Work() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
+    <Card  sx={{ maxWidth: 395,margin:"auto",border:"1px solid grey",mb:3,height:"300"}}>
       <CardMedia
         component="img"
         height="140"
@@ -107,8 +106,12 @@ function Work() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+      <Button variant="contained" color="success">
+  Success
+</Button>
+      <Button variant="outlined" color="error">
+  Error
+</Button>
       </CardActions>
     </Card>
     </Grid>

@@ -72,16 +72,21 @@ small{
     color: #FF4646;
     font-size:1px ;
 }
-h1{
-    font-size: 20rem ;
-    line-height: 135px;
+.firstname{
+    font-size: 3rem ;
+    line-height: 50px; 
     text-align: center;  
-    font-weight: 900;
+   font-weight: 900; 
+   margin-top: 20px;
 }
-h2{
+.secondname{
     font-weight: 500; 
     text-align: center;  
     font-size: 100px;
+    font-size: 3rem ;
+
+}
+h3{
 
 }
 p,.intro{
