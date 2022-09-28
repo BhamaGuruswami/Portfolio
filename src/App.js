@@ -13,10 +13,10 @@ function App() {
       <Router>
       {/* <Home /> */}
       <Routes>
-      <Route path="/" exact element={<Home />}/>
-      <Route path='/work'  exact element={<Work />}/>
-      <Route path='/story' exact element={<Story />}/>
-      <Route path='/contact' exact element={<Contact />}/> 
+      <Route path="/BHAMA_PORTFOLIO" exact element={<Home />}/>
+      <Route path='/BHAMA_PORTFOLIO/work'  exact element={<Work />}/>
+      <Route path='/BHAMA_PORTFOLIO/story' exact element={<Story />}/>
+      <Route path='/BHAMA_PORTFOLIO/contact' exact element={<Contact />}/> 
 
       </Routes>
       </Router>
