@@ -1,4 +1,4 @@
-.section {
+/* .section {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -21,4 +21,16 @@
 
     margin: 0 auto;
     line-height: 50px;
-    text-align: center;}
+    text-align: center;} */
+
+    @media screen and (max-width: 599px){
+        .text {
+            padding: 1px;
+            text-align: justify;
+            word-spacing: 0px;
+            line-height: normal;
+            padding-left: 2px;
+
+;        }
+    }
+    

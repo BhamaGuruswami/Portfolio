@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import  './Home.css'
 import "./Story.css";
-import "./About.css";
+// import "./About.css";
+import Typography from '@mui/material/Typography';
 
 import {Row,Col} from 'react-bootstrap/';
 import Image from '../img/myphoto.jpg'
@@ -24,9 +25,6 @@ function Story() {
               <ul className={isMobile? 'nav-links-mobile':'nav-links'}
                  onClick={()=> setIsMobile(false)}
                  >
-                <Link to='/' className='home'>
-                  <li>Home</li>
-                </Link>
                 <Link to='/Work' className='work'>
                   <li>Work</li> 
                 </Link>
@@ -45,19 +43,26 @@ function Story() {
               </button>
             </nav>
 
-            <div className='section'>
-       <div className="section__container">
-    <div className="section__content">
+            {/* <div className='aboutus'>
+       <div className="aboutus">
+    <div className="aboutus">
         <h1>Who is Bhama ?</h1>
-        <p>Web development trainee at becode</p>
-        <p>Junior fronted Developer</p>
-        <p>Passionate about creating interactive applications</p>
-        <p>Javascript Developer</p>
-        <p>React js Developer</p>
+        <p>Web development trainee at becode
+        Junior fronted Developer
+        Passionate about creating interactive applications
+        Javascript Developer
+        React js Developer</p>
     </div>
 </div>
 
-</div>
+</div> */}
+      <Typography className='text' variant="subtitle1" gutterBottom paddingLeft={14} paddingRight={13} mt={5} align={'justify'} >
+       Currently I am doing Web development trainee at becode.
+        Junior fronted Developer
+        Passionate about creating interactive applications
+        
+         </Typography>
+
 
           </Col>
         </Row>

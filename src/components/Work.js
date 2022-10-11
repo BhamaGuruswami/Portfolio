@@ -15,6 +15,8 @@ import Project1 from '../img/getflix.png';
 import Project2 from '../img/cookiclicker.png';
 import Project3 from '../img/potofilio.png';
 import {Link} from "react-router-dom"
+import Carousel from 'react-bootstrap/Carousel';
+
 
 function Work() {
   const [isMobile,setIsMobile]= useState(false)
@@ -30,9 +32,9 @@ function Work() {
               <ul className={isMobile? 'nav-links-mobile':'nav-links'}
                             onClick={()=>setIsMobile(false)}
               >
-                <Link to='/' className='home'>
+                {/* <Link to='/' className='home'>
                   <li>Home</li>
-                </Link>
+                </Link> */}
                 <Link to='/Work' className='work'>
                   <li>Work</li> 
                 </Link>
@@ -51,8 +53,11 @@ function Work() {
               </button>
 
               </nav>
-<Grid>
-<Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
+
+
+    <Carousel>
+      <Carousel.Item>
+         <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -73,7 +78,10 @@ function Work() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
+   
+      </Carousel.Item>
+      <Carousel.Item>
+      <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -88,6 +96,60 @@ function Work() {
         </Typography>
       </CardContent>
       <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+   
+      </Carousel.Item>
+      <Carousel.Item>
+      <Card  sx={{ maxWidth: 395,margin:"auto",border:"1px solid grey",mb:3,height:"300"}}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={Project3}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Portfolio        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        Creating the portfolio website using the library react and frame work bootstrap
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button variant="contained" color="success">
+  Success
+</Button>
+      <Button variant="outlined" color="error">
+  Error
+</Button>
+      </CardActions>
+    </Card> 
+   
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
+<Grid>
+{/* <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={Project1}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        BesTube        </Typography>
+        <Typography variant="body2" >
+        <p>In this exercise, we created a Streaming site in html / css, javascript and php.
+       We were inspired by Netflix, Amazon Prime Video, Youtube... The goal is to display a catalogue of movies and TV series.
+     </p>
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
@@ -113,7 +175,7 @@ function Work() {
   Error
 </Button>
       </CardActions>
-    </Card>
+    </Card> */}
     </Grid>
 
 

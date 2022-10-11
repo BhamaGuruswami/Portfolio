@@ -11,12 +11,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-      {/* <Home /> */}
       <Routes>
-      <Route path="/BHAMA_PORTFOLIO" exact element={<Home />}/>
-      <Route path='/BHAMA_PORTFOLIO/work'  exact element={<Work />}/>
-      <Route path='/BHAMA_PORTFOLIO/story' exact element={<Story />}/>
-      <Route path='/BHAMA_PORTFOLIO/contact' exact element={<Contact />}/> 
+      <Route path="/" element={<Home />}/>
+      <Route path='/work' element={<Work />}/>
+      <Route path='/story' element={<Story />}/>
+      <Route path='/contact' element={<Contact />}/> 
 
       </Routes>
       </Router>

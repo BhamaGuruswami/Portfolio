@@ -13,16 +13,16 @@ function Home() {
     <Box sx={{ flexGrow: 1, textAlign: "center" }}>
     <Grid container>
       <Grid item xs={12} md={6} lg={6}>
-        <Row className='mx-auto'>
+        <Row className='fullwidth'>
           <Col>
             <nav className='navbar'>
               <h3 className='logo'> <strong>bh</strong>  <span class="heading-dot"></span></h3>
               <ul className={isMobile? 'nav-links-mobile':'nav-links'}
               onClick={()=>setIsMobile(false)}
               >
-                <Link to='/' className='home'>
+                {/* <Link to='/' className='home'>
                   <li>Home</li>
-                </Link>
+                </Link> */}
                 <Link to='./Work' className='work'>
                   <li>Work</li> 
                 </Link>
