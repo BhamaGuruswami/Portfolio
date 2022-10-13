@@ -6,6 +6,7 @@ import {FaGithub,FaInstagram,FaLinkedinIn,} from 'react-icons/fa';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import {Link} from "react-router-dom"
+import { Diversity1TwoTone } from '@mui/icons-material';
 
 function Home() {
   const [isMobile,setIsMobile]= useState(false)
@@ -45,14 +46,13 @@ function Home() {
             <h3 className='secondname'>Guruswami <span class="dot"></span></h3>
             <p>Hi, I’m Bhama Guruswami Junior fronted developer at <b>BeCode</b> and looking for an internship from November to February 2023</p>
             </div>
-            <Col className='social'>
+            <div className='social'>
               <button  href=' https://github.com/BhamaGuruswami?tab=repositories' className='hello'>Say Hello</button>
               <button className='github' ><FaGithub /></button>
               <button className='instagram'>< FaInstagram /></button>
-              <button className='linkedin'>< FaLinkedinIn /></button>
                             {/* <button className='github' ><a href="https://github.com/BhamaGuruswami"  target="_blank"><FaGithub /></a></button> */}
 
-            </Col>
+            </div>
 
           </Col>
         </Row>
