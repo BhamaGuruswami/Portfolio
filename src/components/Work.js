@@ -57,7 +57,7 @@ function Work() {
 
     <Carousel>
       <Carousel.Item>
-         <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3,boxShadow:" 0px 18px 50px rgba(255, 70, 70, 0.2)"}}>
+         <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
       <CardMedia
         component="img"
         height="140"
@@ -73,7 +73,6 @@ function Work() {
      </p>
         </Typography>
       </CardContent>
-      <Button variant="contained">Contained</Button>
 
   </Card>
    
@@ -115,12 +114,6 @@ function Work() {
         </Typography>
       </CardContent>
       <CardActions>
-      <Button variant="contained" color="success">
-  Success
-</Button>
-      <Button variant="outlined" color="error">
-  Error
-</Button>
       </CardActions>
     </Card> 
    

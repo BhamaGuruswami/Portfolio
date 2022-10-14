@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import  './Home.css'
 import "./Story.css";
-// import "./About.css";
+import "./About.css";
 import Typography from '@mui/material/Typography';
 
 import {Row,Col} from 'react-bootstrap/';
@@ -56,10 +56,12 @@ function Story() {
 </div>
 
 </div> */}
-      <Typography className='text' variant="subtitle1" gutterBottom paddingLeft={14} paddingRight={13} mt={5} align={'justify'} >
-       Currently I am doing Web development trainee at becode.
-        Junior fronted Developer
+      <Typography className='text' variant="subtitle1" paddingLeft={14} color={'black'} paddingRight={13}
+    mt={5} align={'justify'}>
+      I am currently finishing my 7-month training course at Becode. I am therefore looking for an internship opportunity for a period of 2 months possibility to extend to 3 months starting from November to December
+     During my training, I was able to develop my skills in html,css,javascript and react
         Passionate about creating interactive applications
+        eagerly want to learn new technology
         
          </Typography>
 

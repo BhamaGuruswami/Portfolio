@@ -45,13 +45,13 @@ function Home() {
             <h1 className='firstname'>bhama </h1>
             <h3 className='secondname'>Guruswami <span class="dot"></span></h3>
             <p>Hi, I’m Bhama Guruswami Junior fronted developer at <b>BeCode</b> and looking for an internship from November to February 2023</p>
-            </div>
             <div className='social'>
               <button  href=' https://github.com/BhamaGuruswami?tab=repositories' className='hello'>Say Hello</button>
               <button className='github' ><FaGithub /></button>
               <button className='instagram'>< FaInstagram /></button>
                             {/* <button className='github' ><a href="https://github.com/BhamaGuruswami"  target="_blank"><FaGithub /></a></button> */}
 
+            </div>
             </div>
 
           </Col>

@@ -4,6 +4,7 @@
     overflow: hidden;
 
 }
+
 .section__container {
     display: flex;
     justify-content: space-between;
@@ -23,6 +24,12 @@
     line-height: 50px;
     text-align: center;} */
 
+    @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+    *{
+        font-family: 'Glory', sans-serif;
+
+    }
     @media screen and (max-width: 599px){
         .text {
             padding: 1px;
