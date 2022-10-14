@@ -17,7 +17,6 @@ import Project3 from '../img/potofilio.png';
 import {Link} from "react-router-dom"
 import Carousel from 'react-bootstrap/Carousel';
 
-
 function Work() {
   const [isMobile,setIsMobile]= useState(false)
 
@@ -51,10 +50,7 @@ function Work() {
               >
               {isMobile ? <i className="fa-sharp fa-solid fa-circle-xmark"></i>:<i className="fa-solid fa-bars"></i>}
               </button>
-
               </nav>
-
-
     <Carousel>
       <Carousel.Item>
          <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
@@ -73,9 +69,7 @@ function Work() {
      </p>
         </Typography>
       </CardContent>
-
   </Card>
-   
       </Carousel.Item>
       <Carousel.Item>
       <Card  sx={{ maxWidth: 395,elevation:"2",margin:"auto",border:"1px solid grey",mb:3}}>
