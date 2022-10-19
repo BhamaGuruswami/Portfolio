@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+.Card{
+    box-sizing: border-box;
+    width: 450px;
+    height: 130px;
+    box-shadow: 0px 18px 50px rgba(255, 70, 70, 0.1);
+  }
+  .learn{
+    border: none;
+    color: white;
+    /* padding: 20px; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0px 18px 50px rgba(255, 70, 70, 0.1);
+    border-radius: 50px;
+    bottom: 15px;
+    position: absolute;
+
+  }

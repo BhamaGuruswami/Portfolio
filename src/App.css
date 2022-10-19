@@ -1,0 +1,235 @@
+
+.box{
+    width: 100%;
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    /* width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 1rem; */
+}
+.topheading{
+    margin: 0px;
+}
+strong{
+    font-size: 40px;
+}
+small{
+    color: #FF4646;
+    font-size:1px ;
+}
+
+
+.navbar {
+    /* width: 100%;
+    height: 90%;
+    
+    border-bottom: 1px solid #eee; */
+     display: flex;
+    align-items: baseline ;
+    height: 80px;
+    justify-content:center; 
+    margin-right: 100px; 
+    font-family: 'Roboto', sans-serif;
+    /* margin: 5px 0px; */
+    font-size:20.00px;
+}
+
+
+.navbar li{
+    padding: 1rem;
+}
+
+.logo{
+    position: relative;
+    /* font-size: 10px; */
+    margin-left: 0px;
+    padding-left:90px; 
+}
+
+a { color: inherit;
+    text-decoration: none;
+
+ } 
+.nav-links{
+    display: flex;
+    /* justify-content: center; */
+    list-style: none;
+    width: 65%;
+    
+}
+
+.intro {
+    margin: 0px 119px 0px 110px;
+
+}
+.home,.work,.story,.contact{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 2px 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: black;
+    }
+    .mobile-menu-icon{
+        display: none;
+    }
+    .Navbar.Brand{
+        font-size: smaller;
+        float:left;
+        margin: 0px;
+    }
+    
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.heading-dot {
+    height: 10px;
+    width: 10px;
+    background-color:#FF4646;
+    border-radius: 50%;
+    display: inline-block;
+  }
+/* humburger */
+@media screen and (max-width: 780px){
+    .logo {
+        display: flex;
+        position: absolute ;
+        top: 15px;
+        left: -75px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .navbar li{
+        padding: 4rem;
+    }
+    .work{
+        padding-left: 3px;
+        padding-right: 10px;
+    }
+    .heading-dot {
+        height: 10px;
+        width: 10px;
+        bottom: 1px;
+        background-color:#FF4646;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 29px;
+      }
+      
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        left: 0;
+        top: -10px;
+        font-size: 48px;
+        transition:all 0.7 ease;
+        width: 100%;
+        height: 100%;
+        color: black;
+        background-color:white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .home,.work,.story,.contact{
+        color: black;
+        transition: all 0.5s ease;
+        width: 100%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+
+        }
+        .mobile-menu-icon{
+            display: block;
+            position: absolute;
+            font-size: 35px;
+            background-color:white;
+            border: none;
+            outline: none;
+            top: 39px;
+            right: 5px;
+            color: black;
+            -moz-transition: ease all 0.35s;
+            -o-transition: ease all 0.35s;
+            -webkit-transition: ease all 0.35s;
+            transition: ease all 0.35s;
+          
+        }
+}
+
+@media screen and (max-width: 599px){
+    .hide-on-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 599px){
+    .intro {
+        padding: 2px 11px  !important;
+        margin: 0px;
+        word-spacing: normal !important;
+    }
+}
+.firstname{
+    font-size: 48.83px;
+    font-weight: 800;
+    margin-bottom: -50px;
+}
+.secondname{
+    font-size: 48.83px;
+    font-weight: 100;
+    padding-top: 0;
+    margin-bottom: -1px;
+
+
+}
+.intro{
+    text-align: justify;
+    margin-top: 20px;
+    
+}
+p{
+font-size: 16.00px;}
+button.instagram,.linkedin,.github{
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 6px 10px;
+    margin: 50px 20px;
+    text-align: center; 
+    box-shadow: 0px 18px 50px rgba(255, 70, 70, 0.1);
+    list-style: none;
+ } 
+ button{
+ background-color:  #FF4646;
+ }
+ .profile{
+    /* margin-top: 20px; */
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+ .hello{
+    font-size: 16px;
+    line-height: 33px;
+    background-color:  #FF4646;
+    box-shadow: 0px 18px 50px rgba(255, 70, 70, 0.2);
+    border-radius: 700px;
+    color:#FFFFFF;
+    border: none;
+    padding: 6px 25px;
+    margin: 0px 5px;
+    text-align: center;
+    }
