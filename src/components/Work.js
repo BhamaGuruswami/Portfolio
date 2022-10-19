@@ -13,7 +13,6 @@ import Project3 from '../img/potofilio.png';
 import Carousel from 'react-bootstrap/Carousel';
 
 function Work() {
-
   return (
     <Carousel className='work'>
       <Carousel.Item>
@@ -33,6 +32,10 @@ function Work() {
        We were inspired by Netflix, Amazon Prime Video, Youtube... The goal is to display a catalogue of movies and TV series.
      </p>
         </Typography>
+        <CardActions>
+       <Button href="https://www.google.com/">Link</Button>
+       </CardActions>
+ 
       </CardContent>
   </Card>
       </Carousel.Item>
