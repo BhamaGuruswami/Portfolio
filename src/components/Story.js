@@ -3,7 +3,7 @@ import "./Story.css";
 import Typography from '@mui/material/Typography';
 
 function Story() {
-  const [isMobile,setIsMobile]= useState(false)
+  // const [isMobile,setIsMobile]= useState(false)
 
   return (
     <div className='container'>

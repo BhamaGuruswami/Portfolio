@@ -1,12 +1,10 @@
-import { Row, Col } from 'react-bootstrap/';
 import React, { useState } from 'react'
-import Image from '../img/myphoto.jpg'
 import '../App.css'
-import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaInstagram } from 'react-icons/fa';
 
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false)
+  // const [isMobile, setIsMobile] = useState(false)
   return (
       <div className='intro'>
         <h1  className='firstname'>bhama </h1>

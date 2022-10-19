@@ -1,10 +1,5 @@
-import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import {Row,Col} from 'react-bootstrap/';
-import Image from '../img/myphoto.jpg'
+import React from 'react';
 import  '../App.css'
-import Link from '@mui/material/Link';
 import  './Project.css'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
